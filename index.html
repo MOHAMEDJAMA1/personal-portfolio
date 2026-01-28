@@ -4,218 +4,454 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mohamed Jama - Website Developer Portfolio">
-    <title>Mohamed Jama | Website Developer</title>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700&display=swap"
-        rel="stylesheet">
-
-    <!-- CSS -->
+    <title>Mohamed Jama | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">Mohamed Jama<span>.</span></a>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#projects">Work</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact" class="nav-cta">Contact Me</a>
+    <div class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a style="display: flex; align-items: center; color: white; margin-bottom: 20; cursor: pointer;">
+                    &lt;Mohamed /&gt;
+                </a>
             </div>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="mobile-menu-icon">
+                ☰
             </div>
+            <ul class="nav-items">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="https://github.com/MOHAMEDJAMA1" target="_blank" class="github-button">Github Profile</a>
         </div>
-    </nav>
 
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu">
-        <a href="#about" class="mobile-link">About</a>
-        <a href="#projects" class="mobile-link">Work</a>
-        <a href="#skills" class="mobile-link">Skills</a>
-        <a href="#contact" class="mobile-link">Contact</a>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="mobile-menu">
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#experience" class="mobile-link">Experience</a>
+            <a href="#education" class="mobile-link">Education</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="https://github.com/MOHAMEDJAMA1" target="_blank" class="github-button"
+                style="padding: 10px 16px; background: var(--primary); color: white; width: max-content; margin-top: 10px;">Github
+                Profile</a>
+        </div>
     </div>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-        <div class="container hero-content hidden">
-            <h2 class="hero-subtitle">Hello, I'm</h2>
-            <h1 class="hero-title">Mohamed Jama</h1>
-            <h3 class="hero-role">Website Developer</h3>
-            <p class="hero-text">I build clean, fast, and responsive websites.</p>
-            <div class="hero-btns">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Contact Me</a>
-            </div>
-        </div>
-        <!-- Decorative Background Elements -->
-        <div class="hero-glow glow-1"></div>
-        <div class="hero-glow glow-2"></div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container hidden">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I am a passionate developer who specializes in building professional business and personal
-                        websites. My focus is always on creating clean, intuitive designs that prioritize responsiveness
-                        and usability accross all devices.</p>
-                    <p>Whether you need a simple landing page or a complete portfolio, I ensure that your online
-                        presence is fast, accessible, and elegant.</p>
+    <div id="about" class="hero-container">
+        <div class="hero-inner-container">
+            <!-- Left Side -->
+            <div class="hero-left-container">
+                <div class="hero-title">
+                    Hi, I am <br /> Mohamed Jama
                 </div>
+                <div class="text-loop">
+                    I am a
+                    <span class="span-text"></span>
+                </div>
+                <div class="hero-subtitle">
+                    I am a motivated and versatile individual, always eager to take on new challenges. With a passion
+                    for learning I am dedicated to delivering high-quality results. With a positive attitude and a
+                    growth mindset, I am ready to make a meaningful contribution and achieve great things.
+                </div>
+                <a href="#projects" class="resume-button">Check Resume</a>
+            </div>
+
+            <!-- Right Side (Image/3D replacement) -->
+            <div class="hero-right-container">
+                <!-- Using a circular profile image with the primary border as per reference design -->
+                <img src="https://avatars.githubusercontent.com/u/155262077?v=4" alt="Hero"
+                    style="width: 100%; height: 100%; max-width: 400px; max-height: 400px; border-radius: 50%; border: 2px solid var(--primary); object-fit: cover;">
             </div>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container hidden">
-            <h2 class="section-title">Projects & Experience</h2>
-            <div class="projects-grid">
-
-                <!-- Featured Project: MAJWEB -->
-                <article class="project-card" style="grid-column: 1 / -1; max-width: 900px; margin: 0 auto;">
-                    <div class="project-image">
-                        <img src="majweb.png" alt="MAJWEB Website Preview" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="project-info">
-                        <h3>Founder & Web Developer – MAJWEB</h3>
-                        <p class="project-desc">
-                            I am the founder of MAJWEB, a web development studio that I created to help businesses build
-                            professional, modern websites.
-                            I designed and built the MAJWEB website myself to clearly explain our services, showcase
-                            example work, and allow clients to contact us easily through WhatsApp.
-                            This project represents my ability to plan, design, build, and launch a real business
-                            website from start to finish.
-                        </p>
-
-                        <div style="margin-bottom: 1.5rem;">
-                            <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">My Responsibilities</h4>
-                            <ul
-                                style="color: var(--text-secondary); list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
-                                <li>Founded and created MAJWEB as my own web development company</li>
-                                <li>Planned the website structure and content</li>
-                                <li>Designed a clean, modern, and responsive layout</li>
-                                <li>Built the full website (Home, Our Work, Contact pages)</li>
-                                <li>Implemented a WhatsApp contact form for client inquiries</li>
-                                <li>Launched the website and made it live</li>
-                            </ul>
-
-                            <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">Impact / Purpose</h4>
-                            <ul style="color: var(--text-secondary); list-style-type: disc; padding-left: 1.5rem;">
-                                <li>MAJWEB helps businesses:</li>
-                                <li>Establish a strong online presence</li>
-                                <li>Present their services clearly</li>
-                                <li>Connect with customers easily</li>
-                            </ul>
-                        </div>
-
-                        <div class="project-links">
-                            <a href="https://majweb.netlify.app" target="_blank" class="btn-sm btn-fill">View Live
-                                Website</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 1 -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="alpha.png" alt="Alpha Construction Website Preview"
-                            style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="project-info">
-                        <h3>Business Website</h3>
-                        <p class="project-desc">A professional multi-page website for Alpha Construction, featuring a
-                            modern design, service showcase, and contact integration.</p>
-                        <div class="project-links">
-                            <a href="https://alphacons.netlify.app" target="_blank" class="btn-sm btn-fill">Live
-                                Demo</a>
-                            <a href="#" class="btn-sm btn-link">GitHub Repo</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 2 -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="personal.png" alt="Personal Portfolio Website Preview"
-                            style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="project-info">
-                        <h3>Personal Portfolio</h3>
-                        <div class="project-links">
-                            <a href="https://mohamedjama12.netlify.app" target="_blank" class="btn-sm btn-fill">Live
-                                Demo</a>
-                            <a href="#" class="btn-sm btn-link">GitHub Repo</a>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-        </div>
-    </section>
+    </div>
 
     <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container hidden">
-            <h2 class="section-title">My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <div class="skill-icon html-icon">HTML5</div>
-                    <span>HTML</span>
+    <div id="skills" class="skills-container">
+        <div class="wrapper">
+            <div class="title">Skills</div>
+            <div class="desc">
+                Here are some of my skills on which I have been working on for the past 2 years.
+            </div>
+
+            <div class="skills-list-container">
+                <!-- Frontend -->
+                <div class="skill-card">
+                    <div class="skill-title">Frontend</div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                                alt="html" style="width: 24px; height: 24px;" />
+                            HTML
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                                alt="css" style="width: 24px; height: 24px;" />
+                            CSS
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                                alt="javascript" style="width: 24px; height: 24px;" />
+                            JavaScript
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+                                alt="react" style="width: 24px; height: 24px;" />
+                            React
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-icon css-icon">CSS3</div>
-                    <span>CSS</span>
+
+                <!-- Others -->
+                <div class="skill-card">
+                    <div class="skill-title">Tools</div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg"
+                                alt="git" style="width: 24px; height: 24px;" />
+                            Git
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg" alt="netlify"
+                                style="width: 24px; height: 24px;" />
+                            Netlify
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg"
+                                alt="vscode" style="width: 24px; height: 24px;" />
+                            VS Code
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-icon js-icon">JS</div>
-                    <span>JavaScript</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience / Projects Section -->
+    <div id="projects" class="projects-container">
+        <div class="wrapper">
+            <div class="title">Projects</div>
+            <div class="desc">
+                I have worked on a wide range of projects. Here are some of my web apps.
+            </div>
+
+            <div class="card-container">
+
+                <!-- FEATURED PROJECT: MAJWEB -->
+                <div class="project-card" onclick="window.open('https://majweb.netlify.app', '_blank')">
+                    <img class="project-image" src="majweb.png" alt="MAJWEB" />
+                    <div class="project-tags">
+                        <span class="tag">Business</span>
+                        <span class="tag">Portfolio</span>
+                    </div>
+                    <div class="details">
+                        <div class="project-title">Founder & Developer - MAJWEB</div>
+                        <div class="date">Jan 2026 - Present</div>
+                        <div class="description">
+                            Founded MAJWEB, a web development studio helping businesses build professional websites.
+                            Designed and built the site, established services, and integrated WhatsApp contact.
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-icon responsive-icon">📱</div>
-                    <span>Responsive Design</span>
+
+                <!-- PROJECT 1: ALPHA CONSTRUCTION -->
+                <div class="project-card" onclick="window.open('https://alphacons.netlify.app', '_blank')">
+                    <img class="project-image" src="alpha.png" alt="Alpha Construction" />
+                    <div class="project-tags">
+                        <span class="tag">Construction</span>
+                        <span class="tag">Business</span>
+                    </div>
+                    <div class="details">
+                        <div class="project-title">Alpha Construction Website</div>
+                        <div class="date">Dec 2025</div>
+                        <div class="description">
+                            A modern multi-page website for Alpha Construction showcasing services and projects.
+                            Features a clean design, service gallery, and contact integration.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2: PERSONAL PORTFOLIO -->
+                <div class="project-card" onclick="window.open('https://mohamedjama12.netlify.app', '_blank')">
+                    <img class="project-image" src="personal.png" alt="Portfolio" />
+                    <div class="project-tags">
+                        <span class="tag">Personal</span>
+                        <span class="tag">Dev</span>
+                    </div>
+                    <div class="details">
+                        <div class="project-title">Personal Portfolio V1</div>
+                        <div class="date">Jan 2026</div>
+                        <div class="description">
+                            My first portfolio website built to showcase my early projects and skills. Simple, clean,
+                            and responsive design using HTML/CSS/JS.
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
-    </section>
+    </div>
+
+    <div id="experience" class="wrapper" style="margin-bottom: 50px; padding: 0 16px;">
+        <div class="title">Experience</div>
+        <div class="desc" style="margin-bottom: 40px;">
+            My work experience as a software engineer and working on different companies and projects.
+        </div>
+
+        <div class="timeline-container">
+
+            <!-- Item 1: MAJWEB (Left) -->
+            <div class="timeline-item left fade-up-element">
+                <div class="timeline-icon">
+                    <img src="https://raw.githubusercontent.com/MOHAMEDJAMA1/MOHAMEDJAMA1/main/majweb-logo-small.png"
+                        onerror="this.src='https://via.placeholder.com/40/854CE6/FFFFFF?text=M'" alt="MAJ"
+                        style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                </div>
+                <div class="timeline-content">
+                    <h3 class="exp-role">Founder & Lead Developer</h3>
+                    <div class="exp-company">MAJWEB</div>
+                    <div class="exp-date">2024 – Present</div>
+                    <div class="exp-desc">
+                        <p>Started MAJWEB to build and launch professional websites for businesses and individual
+                            clients.</p>
+                        <p>Manage every part of the business, from finding clients to designing the UI and writing the
+                            final code.</p>
+                        <p>Focused on delivering high-quality, fast-loading sites that actually help businesses grow.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2: Client Specialist (Right) -->
+            <div class="timeline-item right fade-up-element">
+                <div class="timeline-icon">
+                    <span style="font-weight: bold;">C</span>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="exp-role">Client Website Specialist</h3>
+                    <div class="exp-company">Freelance / Contract</div>
+                    <div class="exp-date">2023 - 2024</div> <!-- Estimated date based on flow -->
+                    <div class="exp-desc">
+                        <p>Built and deployed real-world websites and landing pages for a wide range of clients.</p>
+                        <p>Work directly with business owners to understand what they need and turn their ideas into a
+                            working site.</p>
+                        <p>Handle the full launch process, including custom design, hosting setup, and making sure the
+                            site works perfectly on all devices.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3: React Dev (Left) -->
+            <div class="timeline-item left fade-up-element">
+                <div class="timeline-icon">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+                        alt="React" style="width: 60%; height: 60%;">
+                </div>
+                <div class="timeline-content">
+                    <h3 class="exp-role">React.js Development</h3>
+                    <div class="exp-company">Specialized Skillset</div>
+                    <div class="exp-desc">
+                        <p>Build modern, interactive web interfaces using React.js to create a smooth experience for
+                            users.</p>
+                        <p>Use Tailwind CSS and TypeScript alongside React to build clean, bug-free layouts.</p>
+                        <p>Specialize in making websites fast and responsive, ensuring they look great on both mobile
+                            and desktop.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4: SaaS (Right) -->
+            <div class="timeline-item right fade-up-element">
+                <div class="timeline-icon">
+                    <span style="font-weight: bold;">S</span>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="exp-role">SaaS Product Development</h3>
+                    <div class="exp-company">MAJWEB Internal Products</div>
+                    <div class="exp-date">Current Focus</div>
+                    <div class="exp-desc">
+                        <p>Currently building and scaling SaaS (Software as a Service) tools under the MAJWEB brand.</p>
+                        <p>Developing an AI-driven dashboard that helps businesses analyze customer reviews and generate
+                            professional replies automatically.</p>
+                        <p>Managing the full product roadmap, from coding the frontend to integrating AI APIs for real
+                            business solutions.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Education Section -->
+    <div id="education" class="wrapper" style="margin-bottom: 50px; padding: 0 16px;">
+        <div class="title">Education</div>
+        <div class="desc" style="margin-bottom: 40px;">
+            My educational background and technical training that built my foundation.
+        </div>
+
+        <div class="timeline-container">
+
+            <!-- Item 1: High School (Left) -->
+            <div class="timeline-item left fade-up-element">
+                <div class="timeline-icon">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+                        onerror="this.src='https://via.placeholder.com/40/854CE6/FFFFFF?text=H'" alt="HS"
+                        style="width: 60%; height: 60%; filter: grayscale(100%);">
+                </div>
+                <div class="timeline-content">
+                    <h3 class="exp-role">High School Diploma</h3>
+                    <div class="exp-company">High School Education</div>
+                    <div class="exp-desc">
+                        <p>Successfully completed all core academic requirements and graduated with a focus on logical
+                            thinking and problem-solving.</p>
+                        <p>Developed a strong foundation in mathematics and analytical skills that translated directly
+                            into programming.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2: Frontend Study (Right) -->
+            <div class="timeline-item right fade-up-element">
+                <div class="timeline-icon">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                        alt="FE" style="width: 60%; height: 60%;">
+                </div>
+                <div class="timeline-content">
+                    <h3 class="exp-role">Technical Training</h3>
+                    <div class="exp-company">Frontend Development Study</div>
+                    <div class="exp-date">2020 – 2023</div>
+                    <div class="exp-desc">
+                        <p>Dedicated three years to mastering frontend fundamentals, focusing on how modern websites are
+                            structured and designed.</p>
+                        <p>Gained deep experience in building layouts and interactive elements during this intensive
+                            learning period.</p>
+                        <p>Established the core skills needed to transition into professional client work and lead
+                            MAJWEB.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3: Python (Left) -->
+            <div class="timeline-item left fade-up-element">
+                <div class="timeline-icon">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+                        alt="Python" style="width: 60%; height: 60%;">
+                </div>
+                <div class="timeline-content">
+                    <h3 class="exp-role">Specialized Learning</h3>
+                    <div class="exp-company">Python Programming</div>
+                    <div class="exp-desc">
+                        <p>Learned Python to understand backend logic, data processing, and automation.</p>
+                        <p>Focused on writing clean, efficient scripts to handle data and solve complex technical
+                            problems.</p>
+                        <p>Used Python to strengthen my overall understanding of software architecture beyond just the
+                            frontend.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4: C Programming (Right) -->
+            <div class="timeline-item right fade-up-element">
+                <div class="timeline-icon">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C"
+                        style="width: 60%; height: 60%;">
+                </div>
+                <div class="timeline-content">
+                    <h3 class="exp-role">C Language & Project Development</h3>
+                    <div class="exp-company">C Programming & Systems</div>
+                    <div class="exp-desc">
+                        <p>Studied C programming to learn how software works at a low level, including memory management
+                            and performance.</p>
+                        <p>Built several technical projects to apply logic and deal with complex coding challenges.</p>
+                        <p>Developed a disciplined approach to coding that ensures all websites I build today are fast
+                            and stable.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
 
     <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
-        <div class="container hidden">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">Have a project in mind or just want to say hi?</p>
+    <div id="contact" class="wrapper" style="margin-bottom: 50px; padding: 0 16px;">
+        <!-- Earth Icon on Top -->
+        <div style="margin-bottom: 10px;">
+            <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Globe%20Showing%20Europe-Africa.png"
+                alt="Earth" style="width: 100px; height: 100px;">
+        </div>
 
-            <div class="contact-card">
-                <a href="mailto:mohamedabshir881@gmail.com" class="contact-link">
-                    <span class="icon">✉️</span> mohamedabshir881@gmail.com
+        <div class="title">Contact</div>
+        <div class="contact-desc">
+            Feel free to reach out to me for any questions or opportunities!
+        </div>
+
+        <div class="contact-form-container fade-up-element">
+            <div class="contact-title">Email Me 🚀</div>
+
+            <input type="email" id="email" class="contact-input" placeholder="Your Email">
+            <input type="text" id="name" class="contact-input" placeholder="Your Name">
+            <input type="text" id="subject" class="contact-input" placeholder="Subject">
+            <textarea id="message" class="contact-input contact-textarea" placeholder="Message"></textarea>
+
+            <button id="send-btn" class="contact-button">Send</button>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-wrapper">
+            <!-- Name Title -->
+            <div class="footer-title"
+                style="color: var(--primary); font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;">
+                Mohamed Jama
+            </div>
+
+            <!-- Navigation -->
+            <div class="footer-nav">
+                <a href="#about" class="footer-nav-link">About</a>
+                <a href="#skills" class="footer-nav-link">Skills</a>
+                <a href="#projects" class="footer-nav-link">Projects</a>
+                <a href="#experience" class="footer-nav-link">Experience</a>
+                <a href="#education" class="footer-nav-link">Education</a>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="footer-socials">
+                <a href="https://linkedin.com" target="_blank" class="social-icon">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg"
+                        alt="LinkedIn">
                 </a>
-                <a href="https://github.com/MOHAMEDJAMA1" target="_blank" class="contact-link">
-                    <span class="icon">🐙</span> github.com/MOHAMEDJAMA1
+                <a href="https://twitter.com" target="_blank" class="social-icon">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/twitter/twitter-original.svg"
+                        alt="Twitter">
+                </a>
+                <a href="https://github.com/MOHAMEDJAMA1" target="_blank" class="social-icon">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg"
+                        alt="GitHub" style="filter: invert(1);">
                 </a>
             </div>
 
-            <footer>
-                <p>&copy; 2026 Built by me</p>
-            </footer>
+            <p class="copyright">&copy; 2026 Mohamed Jama. All rights reserved.</p>
         </div>
-    </section>
+    </div>
 
-    <!-- Javascript -->
-    <script type="module" src="script.js"></script>
+    <script src="script.js" type="module"></script>
 </body>
 
 </html>
