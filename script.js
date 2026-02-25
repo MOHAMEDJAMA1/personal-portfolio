@@ -82,7 +82,7 @@ const initUpdates = () => {
         });
     }, observerOptions);
 
-    const animateElements = document.querySelectorAll('.hero-left-container, .hero-right-container, .title, .desc, .skill-card, .project-card, .contact-form-container');
+    const animateElements = document.querySelectorAll('.hero-left-container, .hero-right-container, .title, .desc, .skill-card, .project-card, .contact-form-container, .about-card');
     animateElements.forEach((el) => {
         el.classList.add('fade-up-element');
         observer.observe(el);
@@ -143,7 +143,7 @@ const initUpdates = () => {
 
     // --- TYPEWRITER ---
     const textElement = document.querySelector('.span-text');
-    const roles = ["Front End Developer", "Programmer"];
+    const roles = ["Full-Stack Developer", "SaaS Builder", "Software Engineer"];
     let roleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;

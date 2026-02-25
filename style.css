@@ -1036,7 +1036,77 @@ ul {
 
     .project-card {
         width: 100%;
-        /* Full width cards on mobile */
         max-width: 330px;
+    }
+}
+
+/* ========================================
+   About Me Card
+   ======================================== */
+.about-card {
+    width: 100%;
+    max-width: 860px;
+    background: rgba(23, 23, 33, 0.95);
+    border: 0.1px solid #854CE6;
+    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+    border-radius: 16px;
+    padding: 36px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    color: rgba(242, 243, 244, 0.88);
+    font-size: 16px;
+    line-height: 1.85;
+    margin-top: 8px;
+}
+
+.about-card p {
+    margin: 0;
+}
+
+.about-card strong {
+    color: var(--primary);
+}
+
+.about-focus {
+    margin-top: 8px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(133, 76, 230, 0.25);
+}
+
+.focus-title {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.focus-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.focus-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: rgba(242, 243, 244, 0.82);
+}
+
+.focus-dot {
+    width: 8px;
+    height: 8px;
+    min-width: 8px;
+    border-radius: 50%;
+    background: var(--primary);
+    box-shadow: 0 0 8px rgba(133, 76, 230, 0.8);
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .about-card {
+        padding: 24px 20px;
     }
 }
